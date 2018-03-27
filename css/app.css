@@ -8,14 +8,14 @@
 
 /* TITLE AND ABOUT ME PARAGRAPH */
 #aboutMe, h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid rgb(0, 110, 255); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      blink-caret .75s step-end 5;
   }
   
   /* The typing effect */
@@ -27,5 +27,37 @@
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color:  rgb(0, 110, 255); }
   }
+
+  #aboutMe{
+      margin-top: 10px;
+  }
+
+  #connectTitle{
+      margin-top: 20px;
+  }
+
+  .connect{
+      margin-left: 30%;
+      margin-right: 10%;
+  }
+
+  .connectPic{
+    display:inline-block;
+    margin: 0 auto;
+  }
+
+  .footer {
+	text-align: center;
+	color: white;
+	height: 40px;
+	width: 100%;
+	background-color: black;
+	left: 0;
+	bottom: 0;
+	padding-top: 5px;
+	position: relative;
+	clear: both;
+	margin-top: 80px;
+}
