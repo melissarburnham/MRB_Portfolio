@@ -1,9 +1,21 @@
+body {
+    background-image: url('../assets/images/swirl_pattern.jpg');
+	height: 100%;
+	position: relative;
+}
+
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Karma", sans-serif;
 }
+
+.name{
+    font-size:30px;
+}
+
 .w3-main{
     max-width:1200px;
     margin-top:100px;
+    background: white;
 }
 .w3-bar-block .w3-bar-item {
     padding:20px;
@@ -13,12 +25,13 @@ body,h1,h2,h3,h4,h5,h6 {
     display:none;
     z-index:2;
     width:20%;
-    min-width:300px
+    min-width:300px;
 }
 
 .topMenu{
     max-width:1200px;
-    margin:auto
+    margin:auto;
+    background-image: url('../assets/images/swirl_pattern.jpg');
 }
 
 /* CONNECT WITH ME */
@@ -41,6 +54,7 @@ body,h1,h2,h3,h4,h5,h6 {
     margin:auto; 
     width:400px; 
     height:233px;
+    padding-top: 20px;
 }
 
 .portfolio_pics{
@@ -81,4 +95,10 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+footer {
+    background: black;
+    color: white;
+    margin-top: 20px;
 }
