@@ -1,66 +1,142 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRB Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <!-- Compressed CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"/>
-  </head>
-  <body>
-    <div class="grid-container fluid">
-      <div class="grid-x">
-          <div class="cell text-center"><h1>I'm Melissa Burnham.</h1><h1>I love to code.</h1></div>
-      </div>
+<!DOCTYPE html>
+<html>
+<title>MRB Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<body>
 
-      <div class="grid-x grid-margin-x">
-        <div class="cell large-12">
-              <ul class="horizontal menu align-center">
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="index.html">Homepage</a></li>
-                
-              </ul>
-        </div>
-      </div>
-        <div class="grid-x">
-          <div class="cell small-12 medium-4 large-4"><img class="me" src="assets/images/hug.JPEG" alt="Me"></div>
-          <div class="cell small-12 medium-4 large-4"><img class="me" src="assets/images/love.JPEG" alt="Me"></div>
-          <div class="cell small-12 medium-4 large-4"><img class="me" src="assets/images/computerhug.JPEG" alt="Me"></div>         
-      </div>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+  <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">My Work</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact Me</a>   
+</nav>
 
-      <div class="grid-x align-center">
-        <div class="cell large-4">
-            <div>
-              <h5 class="text-center" id = "connectTitle">Connect with Me</h5>
-              <hr class="linebreak">
-            </div>  
-            <div class="connect align-center">
-              <a href="https://github.com/melissarburnham" target="_blank">
-                <img class="connectPic align-center" src="assets/images/github.jpg" alt="github"></a>
-              <a href="https://www.linkedin.com/in/melissa-burnham-06289b134" target="_blank">
-                <img class="connectPic align-center" src="assets/images/linkedin.jpg" alt="linkedin"></a>
-              <a  href="https://melissarburnham.github.io/MRB_Portfolio/documents/melissa_burnham_resume.pdf" target="_blank">
-                <img class="connectPic align-center" src="assets/images/resume.jpg" alt="resume"></a>
-            </div> 
-        </div>
-      </div>
+<!-- Top menu -->
+<div class="w3-top connect">
+  <div class="topMenu w3-white w3-xlarge">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+      <a href="https://github.com/melissarburnham" target="_blank">
+        <img class="w3-center connectPic" src="assets/images/github.jpg" alt="github"></a>
+      <a href="https://www.linkedin.com/in/melissa-burnham-06289b134" target="_blank">
+        <img class="w3-center connectPic" src="assets/images/linkedin.jpg" alt="linkedin"></a>
+      <a  href="https://stackoverflow.com/story/melissarburnham" target="_blank">
+        <img class="w3-center connectPic" src="assets/images/resume.jpg" alt="resume"></a>
     </div>
-    
-    <div class="push"></div>
+    <div class="w3-center w3-padding-16">Melissa Burnham</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding">
+  <hr id="about">
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <img src="assets/images/Me3.JPG" alt="Me" class="w3-image Me">
+    <div class="w3-padding-32">
+      <h4>I love to code.</h4><br>
+      <h6><i>It makes me happy.</i></h6>
+      <p id = "aboutMe">
+        You'd like to know more about me?  <br>
+        Once, I went on a safari in Africa and saved a bunch of animals from being poached. <br>
+        Another time, I single handedly saved 2 babies and 6 kittens from a burning house. <br>
+        Another time after that, I started a social justice movement followed by millions. <br>
+        Are you impressed yet? <br>
+        You'll be even more impressed with my actual accomplishments- my web developing skills.<br>
+        Checkout my portfolio for some of my projects! I am eager to learn and do more!  
+       </p>
+    </div>
+  </div>
 
-     <!--footer-->
-     <footer class="footer">  &copy; 2018 Melissa Burnham</footer>
+  <hr id="portfolio">
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="https://melissarburnham.github.io/Hangman-Game/" target="_blank"><img src="assets/images/flag.jpg" class="portfolio_pics" alt="hangman">	 
+      <h3>13 Colonies Hangman Game</h3>
+      <p>Use of Javascript to create a game that students and/or teachers could use to learn about the 13 Original Colonies.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://melissarburnham.github.io/Gif-tastic/" target="_blank"><img src="assets/images/API.gif" class="portfolio_pics" alt="giphy">	       
+      <h3>GIPHY API</h3>
+      <p>Use of an API to allow users to click a button to generate 10 gifs. Users can click gifs to animate and click 
+          again to stop animation. Users can also add buttons to the app. </p>
+    </div>
+    <div class="w3-quarter">
+			<a href="https://melissarburnham.github.io/Brain-Trivia-Game/" target="_blank"><img src="assets/images/brain.jpg" class="portfolio_pics" alt="brain_trivia">	 
+      <h3>Brain Trivia</h3>
+      <p>Use of javacript, jQuery, and moment.js to create a trivia game where time matters!</p>
+    </div>
+    <div class="w3-quarter">
+			<a href="https://melissarburnham.github.io/Crystals-Collector/" target="_blank"><img src="assets/images/crystal.jpg" class="portfolio_pics" alt="crystal_game">	 
+      <h3>Crystals Collector Game</h3>
+      <p>Use of javascript and jQuery to create a game where users have to collect 
+        just the right amount of crystals to equal the starting score.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+			<a href="https://melissarburnham.github.io/Train-Scheduler/" target="_blank"><img src="assets/images/train.jpg" class="portfolio_pics" alt="train_scheduler">	 
+      <h3>Train Scheduluer</h3>
+      <p>Use of Firebase to create an app where users can enter
+        train information to schedule train times. 
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <!-- Compressed JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-  </body>
+  <hr id="contact">
+  
+      <div class="container">
+          <form action="#">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div> 
+
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-center">
+    &copy; 2018 Melissa Burnham 
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script src="./index.js"></script>
+</body>
 </html>
