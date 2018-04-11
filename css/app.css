@@ -20,9 +20,11 @@ body,h1,h2,h3,h4,h5,h6 {
 .w3-bar-block .w3-bar-item {
     padding:20px;
 }
+
 .w3-left{
     margin-right: 15px;
 }
+
 #mySidebar {
     display:none;
     z-index:2;
@@ -49,6 +51,15 @@ body,h1,h2,h3,h4,h5,h6 {
     width:350px; 
     height:200px;
     padding-top: 40px;
+}
+ 
+.mySlides {
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    display:block;
+    margin:auto;
+    margin-top: 150px;
 }
 
 .portfolio_pics{
@@ -80,6 +91,10 @@ input[type=submit]:hover {
     background-color: blue;
 }
 
+.contactForm {
+    margin-bottom: 40px;
+}
+
 .container {
     border-radius: 5px;
     background-color:rgba(0, 0, 0, 0.329);
@@ -90,4 +105,10 @@ footer {
     background: rgba(0, 0, 0, 0.397);
     color: white;
     margin-top: 20px;
+    margin: auto;
 }
+
+.enter {
+    margin: 35px 0 35px 0;
+}
+
